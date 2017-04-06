@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "build/index.js",
+  "typings": "build/index.d.ts",
   "scripts": {
-    "test": "tsc && mocha"
+    "test": "tsc && mocha",
+    "prepublish": "tsc",
+    "doc": "typedoc --mode file --out ./docs/ ."
   },
   "repository": {
     "type": "git",
